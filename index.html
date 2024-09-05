@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accès à la vidéo</title>
+  <script type="text/javascript">
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      
+      if (password === "Video_demo") {
+       
+        window.location.href = "votreLienGoogleDrive";
+      } else {
+        document.getElementById("errorMessage").style.display = "block";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Entrez le mot de passe pour accéder à la vidéo</h2>
+  <input type="password" id="password" />
+  <button onclick="checkPassword()">Soumettre</button>
+  <p id="errorMessage" style="color:red; display:none;">Mot de passe incorrect</p>
+</body>
+</html>
