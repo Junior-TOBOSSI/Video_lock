@@ -7,9 +7,10 @@
   <script type="text/javascript">
     function checkPassword() {
       var password = document.getElementById("password").value;
-      
-      if (password === "Video_demo") {
-       
+
+       if (password === "form_secu_1") {
+        window.location.href = "https://docs.google.com/spreadsheets/d/1LsmMp49BDHcULSIQYfXMlntmH-NxQyAr/edit?usp=sharing&ouid=117570209102866989293&rtpof=true&sd=true";
+      } else if (password === "form_secu_2") {
         window.location.href = "https://docs.google.com/spreadsheets/d/1G3gTvH65avmcERdKGqGlpqbDQtS1Q5Tv/edit?usp=sharing&ouid=117570209102866989293&rtpof=true&sd=true";
       } else {
         document.getElementById("errorMessage").style.display = "block";
